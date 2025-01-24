@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa"; // Ícone do WhatsApp
 import { Label } from "./ui/label";
 
 const whatsappNumber = "5565981456440"; // Substitua pelo número com código do país
-const whatsappMessage = "Oi! Só passando pra confirmar minha presença no aniversário do Ravi!"; // Substitua pela mensagem desejada
+const whatsappMessage = "Oi! Só passando pra confirmar a presença no aniversário do Ravi!%0ANomes:"; // Substitua pela mensagem desejada
 const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
   whatsappMessage
 )}`;
