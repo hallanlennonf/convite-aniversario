@@ -3,8 +3,8 @@ import { Button } from "./ui/button";
 import { IoIosMap } from "react-icons/io";
 
 const Localizacao: React.FC = () => {
-  const latitude = -15.579339526644226;
-  const longitude = -56.09402856179029;
+  const latitude = -15.579070919490889;
+  const longitude = -56.09387306612211;
 
   // URL para o Waze
   const wazeUrl = `waze://?ll=${latitude},${longitude}&navigate=yes`;
