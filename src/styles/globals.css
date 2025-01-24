@@ -15,9 +15,13 @@
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url('/images/stars2.jpg'); /* Substitua com o nome da sua imagem */
+  background-size: cover; /* Faz a imagem cobrir toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  color: white; /* Garante que o texto tenha contraste com o fundo escuro */
+  height: 100vh; /* Ocupa toda a altura da tela */
+  margin: 0; /* Remove margens padrão */
 }
 
 @layer base {
@@ -84,20 +88,3 @@ body {
     @apply bg-background text-foreground;
   }
 }
-
-.bg-responsive {
-  background-image: url('/images/bg.png'); /* Caminho da sua imagem */
-  background-repeat: no-repeat;
-  background-size: 100% auto; /* Estica a largura, mantém a altura proporcional */
-  background-position: center top; /* Centraliza a imagem no topo */
-}
-
-.bg-stretch {
-  background-image: url('/images/bg.png'); /* Substitua pelo caminho da sua imagem */
-  background-repeat: no-repeat;
-  background-size: cover; /* Estica para cobrir toda a área */
-  background-position: center; /* Centraliza a imagem */
-  width: 100%;
-  height: 100vh; /* Garante que ocupe 100% da altura da tela */
-}
-

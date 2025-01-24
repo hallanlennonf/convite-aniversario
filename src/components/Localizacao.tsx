@@ -18,44 +18,36 @@ const Localizacao: React.FC = () => {
   const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
 
   return (
-    <div className="flex flex-col items-center justify-center p-4 gap-2">
-      <h1 className="text-md font-bold text-white-700">Chegue no Local do Evento!</h1>
-      <div className="flex flex-row gap-2">
+    <div className="flex flex-col items-center justify-center gap-2">
+      <h1 className="text-md font-bold text-blue-950">Chegue no Local do Evento!</h1>
+      <div className="flex flex-row gap-1 flex-wrap justify-center mb-10">
         {/* Botão para Waze */}
         <Button
           onClick={() => window.open(wazeUrl, "_blank")}
-          variant="outline"
+          variant="default"
         >
-          <SiWaze style={{ width: "25px", height: "25px" }} className="mr-2 text-white-500" />
+          <SiWaze style={{ width: "25px", height: "25px" }} className="mr-2 text-blue-400" />
           Waze
         </Button>
 
         {/* Botão para Google Maps */}
         <Button
           onClick={() => window.open(googleMapsAppUrl, "_blank")}
-          variant="outline"
+          variant="default"
         >
-          <IoIosMap style={{ width: "25px", height: "25px" }} className="mr-2 text-white-500" />
+          <IoIosMap style={{ width: "25px", height: "25px" }} className="mr-2 text-orange-500" />
           Maps
         </Button>
 
         {/* Botão para Google Maps */}
         <Button
           onClick={() => window.open(googleMapsWebUrl, "_blank")}
-          variant="outline"
+          variant="default"
         >
-          <IoIosMap style={{ width: "25px", height: "25px" }} className="mr-2 text-white-500" />
+          <IoIosMap style={{ width: "25px", height: "25px" }} className="mr-2 text-orange-500" />
           Maps (Web)
         </Button>
       </div>
-      <Accordion type="single" collapsible>
-        <AccordionItem value="item-1">
-          <AccordionTrigger>Quer ver o mapa?</AccordionTrigger>
-          <AccordionContent>
-            <GoogleMapsEmbed />
-          </AccordionContent>
-        </AccordionItem>
-      </Accordion>
     </div>
   );
 };

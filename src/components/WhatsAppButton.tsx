@@ -12,9 +12,10 @@ export function WhatsAppButton() {
   return (
     <Button
       onClick={() => window.open(whatsappUrl, "_blank")}
-          variant="outline"
+      variant="default"
+      className="max-w-72"
       >
-          <FaWhatsapp style={{ width: "25px", height: "25px" }} className="mr-2 text-white-500" />
+          <FaWhatsapp style={{ width: "25px", height: "25px" }} className="mr-2 text-green-500" />
           <Label className="text-xl">
               Confirme sua presenta!
           </Label>
