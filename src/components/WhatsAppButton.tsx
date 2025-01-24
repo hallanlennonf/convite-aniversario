@@ -17,7 +17,7 @@ export function WhatsAppButton() {
       >
           <FaWhatsapp style={{ width: "25px", height: "25px" }} className="mr-2 text-green-500" />
           <Label className="text-xl">
-              Confirme sua presenta!
+              Confirme sua presença!
           </Label>
       </Button>
   );

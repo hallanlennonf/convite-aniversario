@@ -33,7 +33,7 @@ export default function Home() {
             <div className="flex flex-col items-center justify-center">
               <img src="/images/foguete.png" alt="Descrição da imagem" style={{ width: "250px", height: "250px" }} className="w-128 h-128 object-cover transform -rotate-45" />
               {!isClicked && (
-                <div className="flex flex-col justify-center items-center bg-white/80 rounded-md -mt-5">
+                <div className="flex flex-col justify-center items-center bg-white/80 rounded-md -mt-5 p-2">
                   <p className="text-xl font-bold text-blue-950">🎉 Você está convidado! 🎉</p>
                   <p className="text-sm text-blue-950">Clique no foguete para abrir o convite</p>
                 </div>
