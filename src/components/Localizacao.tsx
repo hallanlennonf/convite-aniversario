@@ -1,8 +1,6 @@
 import { SiWaze } from "react-icons/si";
 import { Button } from "./ui/button";
 import { IoIosMap } from "react-icons/io";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "./ui/accordion";
-import GoogleMapsEmbed from "./GoogleMapsEmbed";
 
 const Localizacao: React.FC = () => {
   const latitude = -15.579339526644226;
@@ -12,7 +10,7 @@ const Localizacao: React.FC = () => {
   const wazeUrl = `waze://?ll=${latitude},${longitude}&navigate=yes`;
 
   // URL para o Google Maps App
-  const appleMapsUrl = `http://maps.apple.com/?ll=${latitude},${longitude}`;
+  const appleMapsUrl = `http://maps.apple.com/?ll=${latitude},${longitude}&q=${latitude},${longitude}`;
 
   // URL para o Google Maps no navegador
   const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
