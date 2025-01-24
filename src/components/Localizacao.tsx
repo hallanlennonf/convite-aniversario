@@ -4,13 +4,14 @@ import { IoIosMap } from "react-icons/io";
 
 const Localizacao: React.FC = () => {
 
-  const plusCode = "CWC4+9F Quilombo, Cuiabá - MT";  // Substitua "YOUR_PLUS_CODE" pelo Plus Code real
+  const latitude = "-15.579070919490889";  // Substitua "YOUR_LATITUDE" pela latitude real
+  const longitude = "-56.09387306612211";  // Substitua "YOUR_LONGITUDE" pela longitude real
   const nomeDoLocal = "BUFFET MIMOS TATY PREMIUM";  // Substitua "NOME_DO_LOCAL" pelo nome real do local
 
-  const wazeUrl = `waze://?q=${encodeURIComponent(plusCode)}&navigate=yes&name=${encodeURIComponent(nomeDoLocal)}`;
+  const wazeUrl = `waze://?ll=${latitude},${longitude}&navigate=yes&name=${encodeURIComponent(nomeDoLocal)}`;
 
   // URL para o Apple Maps App
-  const appleMapsUrl = `http://maps.apple.com/?q=${encodeURIComponent(plusCode)}&t=m&address=${encodeURIComponent(nomeDoLocal)}`;
+  const appleMapsUrl = `http://maps.apple.com/?ll=${latitude},${longitude}&q=${encodeURIComponent(nomeDoLocal)}`;
 
 
   return (
