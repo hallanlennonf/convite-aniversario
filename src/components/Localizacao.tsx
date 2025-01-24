@@ -12,7 +12,7 @@ const Localizacao: React.FC = () => {
   const wazeUrl = `waze://?ll=${latitude},${longitude}&navigate=yes`;
 
   // URL para o Google Maps App
-  const googleMapsAppUrl = `google.maps://?q=${latitude},${longitude}`;
+  const appleMapsUrl = `http://maps.apple.com/?ll=${latitude},${longitude}`;
 
   // URL para o Google Maps no navegador
   const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
@@ -32,7 +32,7 @@ const Localizacao: React.FC = () => {
 
         {/* Botão para Google Maps */}
         <Button
-          onClick={() => window.open(googleMapsAppUrl, "_blank")}
+          onClick={() => window.open(appleMapsUrl, "_blank")}
           variant="default"
         >
           <IoIosMap style={{ width: "25px", height: "25px" }} className="mr-2 text-orange-500" />
