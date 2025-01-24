@@ -3,17 +3,18 @@ import { Button } from "./ui/button";
 import { IoIosMap } from "react-icons/io";
 
 const Localizacao: React.FC = () => {
-  const latitude = -15.579070919490889;
-  const longitude = -56.09387306612211;
 
-  // URL para o Waze
-  const wazeUrl = `waze://?ll=${latitude},${longitude}&navigate=yes`;
+  const plusCode = "CWC4+9F Quilombo, Cuiabá - MT";  // Substitua "YOUR_PLUS_CODE" pelo Plus Code real
+  const nomeDoLocal = "BUFFET MIMOS TATY PREMIUM";  // Substitua "NOME_DO_LOCAL" pelo nome real do local
 
-  // URL para o Google Maps App
-  const appleMapsUrl = `http://maps.apple.com/?ll=${latitude},${longitude}&q=${latitude},${longitude}`;
+  const wazeUrl = `waze://?q=${encodeURIComponent(plusCode)}&navigate=yes&name=${encodeURIComponent(nomeDoLocal)}`;
+
+  // URL para o Apple Maps App
+  const appleMapsUrl = `http://maps.apple.com/?q=${encodeURIComponent(plusCode)}&t=m&address=${encodeURIComponent(nomeDoLocal)}`;
 
   // URL para o Google Maps no navegador
-  const googleMapsWebUrl = `https://www.google.com/maps?q=${latitude},${longitude}`;
+  const googleMapsWebUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(plusCode)}+${encodeURIComponent(nomeDoLocal)}`;
+
 
   return (
     <div className="flex flex-col items-center justify-center gap-2">
