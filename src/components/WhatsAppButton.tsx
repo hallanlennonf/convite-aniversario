@@ -16,7 +16,7 @@ export function WhatsAppButton() {
       className="max-w-72"
       >
           <FaWhatsapp style={{ width: "25px", height: "25px" }} className="mr-2 text-green-500" />
-          <Label className="text-xl">
+          <Label className="text-lg">
               Confirme sua presença!
           </Label>
       </Button>

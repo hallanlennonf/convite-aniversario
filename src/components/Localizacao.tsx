@@ -12,9 +12,6 @@ const Localizacao: React.FC = () => {
   // URL para o Apple Maps App
   const appleMapsUrl = `http://maps.apple.com/?q=${encodeURIComponent(plusCode)}&t=m&address=${encodeURIComponent(nomeDoLocal)}`;
 
-  // URL para o Google Maps no navegador
-  const googleMapsWebUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(plusCode)}+${encodeURIComponent(nomeDoLocal)}`;
-
 
   return (
     <div className="flex flex-col items-center justify-center gap-2">
@@ -36,15 +33,6 @@ const Localizacao: React.FC = () => {
         >
           <IoIosMap style={{ width: "25px", height: "25px" }} className="mr-2 text-orange-500" />
           Maps
-        </Button>
-
-        {/* Botão para Google Maps */}
-        <Button
-          onClick={() => window.open(googleMapsWebUrl, "_blank")}
-          variant="default"
-        >
-          <IoIosMap style={{ width: "25px", height: "25px" }} className="mr-2 text-orange-500" />
-          Maps (Web)
         </Button>
       </div>
     </div>

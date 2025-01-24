@@ -48,7 +48,7 @@ export default function Home() {
             animate={{ opacity: 1, y: 0 }}    // Anima até a posição original
             transition={{ duration: 1 }}
           >
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2 p-6">
               <h2 className="text-5xl font-bold text-blue-950 mt-10">🚀</h2>
               <h2 className="text-xl font-bold text-blue-950 mt-4">Aniversário Espacial do Ravi</h2>
               <p className="text-lg text-blue-950">Você é nosso convidado especial!</p>
