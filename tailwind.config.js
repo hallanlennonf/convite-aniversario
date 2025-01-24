@@ -6,7 +6,23 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx}", // Diretório `app` (se usar Next.js 13 com app directory)
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        twinkleSmallStars: {
+          '0%': { opacity: 0.8 },
+          '50%': { opacity: 1 },
+          '100%': { opacity: 0.8 },
+        },
+        twinkleBigStars: {
+          '0%': { opacity: 0.3 },
+          '50%': { opacity: 0.5 },
+          '100%': { opacity: 0.3 },
+        },
+      },
+      animation: {
+        twinkleSmallStars: 'twinkleSmallStars 6s linear infinite',
+      },
+    },
   },
   plugins: [],
 };

@@ -16,14 +16,13 @@ const MapLinks: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gray-100 p-4">
-      <h1 className="text-2xl font-bold text-purple-600 mb-6 text-gray-700">🎉 Chegue no Local do Evento!</h1>
-      <p className="text-lg text-gray-700 mb-4">Escolha onde abrir o mapa:</p>
+      <h1 className="text-md font-bold text-purple-600 mb-6 text-white-700">Chegue no Local do Evento!</h1>
 
 
       {/* Botão para abrir no Waze */}
       <a
         href={wazeUrl}
-        className="px-4 py-2 bg-blue-600 text-gray-700 rounded-lg shadow hover:bg-blue-700 transition mb-1"
+        className="px-4 py-2 bg-blue-600 text-white-700 rounded-lg shadow hover:bg-blue-700 transition mb-1"
       >
         Waze
       </a>
@@ -31,7 +30,7 @@ const MapLinks: React.FC = () => {
       {/* Botão para abrir no Google Maps App */}
       <a
         href={googleMapsAppUrl}
-        className="px-4 py-2 bg-green-600 text-gray-700 rounded-lg shadow hover:bg-green-700 transition mb-4"
+        className="px-4 py-2 bg-green-600 text-white-700 rounded-lg shadow hover:bg-green-700 transition mb-4"
       >
         Maps (App)
       </a>
@@ -40,11 +39,11 @@ const MapLinks: React.FC = () => {
       <a
         href={googleMapsWebUrl}
         target="_blank"
-        className="px-4 py-2 bg-red-600 text-gray-700 rounded-lg shadow hover:bg-red-700 transition"
+        className="px-4 py-2 bg-red-600 text-white-700 rounded-lg shadow hover:bg-red-700 transition"
       >
         Maps (Web)
       </a>
-      <GoogleMapsEmbed/>
+      {/*<GoogleMapsEmbed/>*/}
     </div>
   );
 };
