@@ -10,16 +10,8 @@ export default function Home() {
   const handleOpen = () => setOpened(true);
 
   return (
-    <div className="relative flex items-center justify-center min-h-screen overflow-hidden">
-      {/* Gradiente de fundo */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black via-gray-800 to-black opacity-90"></div>
-
-      {/* Camada de estrelas maiores */}
-      <div
-  className="absolute inset-0 bg-[url('/images/bg.png')] bg-no-repeat bg-center opacity-80"
-  style={{ backgroundSize: "100% auto" }}
-></div>
-
+    <div className="bg-stretch relative flex items-center justify-center min-h-screen overflow-hidden">
+      
 
       {/* Conteúdo principal */}
       <div className="relative z-10 flex items-center justify-center min-h-screen text-white">
@@ -36,14 +28,14 @@ export default function Home() {
           </motion.div>
         ) : (
           <motion.div
-            className="p-4 rounded-lg text-center max-w-lg "
+            className="p-4 rounded-lg text-center max-w-lg"
             initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: -70 }}
+            animate={{ opacity: 1, y: -60 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="flex flex-col gap-2">
-              <h2 className="text-9xl font-bold text-white-950">🚀</h2>
-              <h2 className="text-3xl font-bold text-white-950  mt-4">Aniversário Espacial de Ravi</h2>
+            <div className="flex flex-col gap-2 ml-12 mr-12">
+              <h2 className="text-5xl font-bold text-white-950">🚀</h2>
+              <h2 className="text-md font-bold text-white-950  mt-4">Aniversário Espacial de Ravi</h2>
               <p className="text-xl text-white-950">Você é nosso convidado especial!</p>
               <div className="flex flex-col mt-6 space-y-4 text-white-950">
                 <Label className="text-xl bg-white/30 backdrop-blur-md rounded-md p-2">
